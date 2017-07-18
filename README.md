@@ -1,9 +1,11 @@
 # time-apmp
 ```
-import times from 'time-ampm';
+import { get12, get24 } from 'time-ampm';
 
-const time = [0, 24]
+const t1 = 0;
+console.log(get12(t1)); // '12 am';
 
-const prettyTime = [times[time[0]], times[time[1]]]; // ['12am', '11.59pm'] 
+const t2 = '10 pm';
+console.log(get24(t2)); // '22';
 
 ```
